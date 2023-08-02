@@ -1,6 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import { Link } from 'gatsby';
+import Layout from '../components/layout'
 
 const pageStyles = {
   color: "#232129",
@@ -139,11 +139,9 @@ const links = [
 
 const IndexPage = () => {
   return (
-      <main>
-        <h1>Welcome to my Gatsby Website!</h1>
-        <p>It is referenced by Gatsby Tutorial</p>
-        <Link to='/about'>About</Link>
-      </main>
+      <Layout pageTitle='Hello World!'>
+        <p>I made this</p>
+      </Layout>
   );
 }
 
