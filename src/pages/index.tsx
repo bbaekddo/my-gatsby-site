@@ -136,6 +136,16 @@ const links = [
   },
 ]
 
+const IndexPage = () => {
+  return (
+      <main>
+        <h1>Welcome to my Gatsby Website!</h1>
+        <p>It is referenced by Gatsby Tutorial</p>
+      </main>
+  );
+}
+
+/*
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
@@ -187,7 +197,8 @@ const IndexPage: React.FC<PageProps> = () => {
     </main>
   )
 }
-
-export default IndexPage
+*/
 
 export const Head: HeadFC = () => <title>Home Page</title>
+
+export default IndexPage
