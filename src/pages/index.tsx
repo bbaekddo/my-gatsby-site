@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import Layout from '../components/layout'
-ˆimport {StaticImage} from 'gatsby-plugin-image'
+import {StaticImage} from 'gatsby-plugin-image'
 
 const pageStyles = {
   color: "#232129",
