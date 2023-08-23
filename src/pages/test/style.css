@@ -1,0 +1,98 @@
+html,body{
+        background-color: black;
+        padding: 30px;
+}
+
+header{
+    .header-image {
+        position: relative;
+        z-index: 1;
+        width: 150px;
+        height:27px;
+    }
+}
+
+main{
+    #title-sub1-sec {
+        padding: 50px 0;
+        .title-sub1-wrap{
+            .title-sub1 {
+                color: white;
+                font-size: 40px;
+                font-weight: 200;
+                line-height: 40px;
+                position: relative;
+                z-index: 1;
+                & strong {
+                    color: white;
+                    font-size: 40px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    #title-sub2-sec {
+        padding: 20px 0;
+        .title-sub2-wrap {
+            color:white;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 20px;
+        }
+    }
+
+    #see-more-button {
+        & img{
+            width:40px;
+        }
+    }
+
+    #content-wrap {
+        .left-content{
+            float: left;
+            width: 70%;
+            padding: 0 2.5%;
+        }
+        & ul {
+            & li{
+                .post{
+                    border-radius: 30px;
+                    background: rgba(255, 255, 255, 0.14);
+                    backdrop-filter: blur(17px);
+                    color: white;
+                    margin: 0 0 20px 0;
+                    padding: 15px 20px;
+                    .post-title {
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+                    .post-profile {
+                        display: flex;
+                        padding-top: 10px;
+                        .profile-image {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                        }
+                        .profile-description {
+                            width: 100px;
+                            height: 50px;
+                            align-items: center;
+                            padding-left: 10px;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

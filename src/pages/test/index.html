@@ -3,41 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Gainge Tech Homepage</title>
+    <link rel='stylesheet' href='setup.css'>
+    <link rel='stylesheet' href='style.css'>
 </head>
-<body style='background-color:black; padding:30px; '>
+<body>
     <header>
-        <img style='position: relative;
-                    z-index: 1;
-                    width: 150px;
-                    height:27px;'
+        <img class='header-image'
              src='../../images/main-title.png'
              alt='main-title'>
     </header>
     <main>
         <!-- 첫 번째 문단 -->
-        <section id='title-sub1-wrap'>
-            <div style='color: white;
-                        font-size: 60px;
-                        font-weight: 200;
-                        line-height: 20px;
-                        position: relative;
-                        z-index: 1'>
-                <p>가인지캠퍼스</p>
-                <p><strong>개발</strong>에 대한 <strong>모든 것</strong></p>
+        <section id='title-sub1-sec'>
+            <div class='title-sub1-wrap'>
+                <div class='title-sub1'>가인지캠퍼스</div>
+                <div class='title-sub1'><strong>개발</strong>에 대한 <strong>모든 것</strong></div>
             </div>
         </section>
 
         <!-- 두 번째 문단 -->
-        <section id='title-sub2-wrap'>
-            <div style='color:white;
-                        font-size: 16px;
-                        font-weight: 600;
-                        line-height: 7px;'>
-                <p>안녕하세요. 가인지캠퍼스 고객경험센터입니다 :)</p>
-                <br>
-                <p>가인지 캠퍼스라는 서비스를 만들어가면서 얻은 우리의 지식들이 세상으로 흘러가도록</p>
-                <p>매주 새로운 소식들로 채워가려고 합니다.</p>
-                <p>더 풍성해질 가인지 Tech를 기대해주세요!</p>
+        <section id='title-sub2-sec'>
+            <div class='title-sub2-wrap'>
+                안녕하세요. 가인지캠퍼스 고객경험센터입니다 :) <br>
+                가인지 캠퍼스라는 서비스를 만들어가면서 얻은 우리의 지식들이 세상으로 흘러가도록 <br>
+                매주 새로운 소식들로 채워가려고 합니다. <br>
+                더 풍성해질 가인지 Tech를 기대해주세요!
             </div>
         </section>
 
@@ -78,267 +68,113 @@
 
         <!-- 게시글 및 담당자 -->
         <section id='content-wrap'>
-            <div class='left-content'
-                 style='float: left;
-                        width: 70%;
-                        padding: 0 2.5%'>
-                <ul style='list-style: none;
-                           margin: 0;
-                           padding: 0'>
+            <div class='left-content'>
+                <ul>
                     <li>
-                        <div class='post'
-                             style='border-radius: 30px;
-                                    background: rgba(255, 255, 255, 0.14);
-                                    backdrop-filter: blur(17px);
-                                    color: white;
-                                    margin: 0 0 20px 0;
-                                    padding: 15px 20px;'>
-                            <p class='post-title'
-                               style='font-size: 20px;
-                                      font-weight: 700;
-                                      margin: 0'>
-                                UX/UI의 개념
-                            </p>
+                        <div class='post'>
+                            <p class='post-title'>UX/UI의 개념</p>
                             <p>사용자의 관점에서 바라본 프로덕트란</p>
-                            <div class='post-profile'
-                                 style='display: flex;'>
-                                <div class='post-profile profile-image'
-                                     style='width: 50px;
-                                            height: 50px;
-                                            border-radius: 50%;
-                                            background-position: center;
-                                            background-repeat: no-repeat;
-                                            background-size: 100%;
-                                            background-image: url("/src/images/RuahProfile.png")'>
+                            <div class='post-profile'>
+                                <div class='profile-image'
+                                     style='background-image: url("/src/images/RuahProfile.png")'>
                                 </div>
-                                <div class='post-profile profile-description'
-                                     style='width: 100px;
-                                            height: 50px;
-                                            align-items: center;
-                                            padding-left: 10px;
-                                            display: flex;'>
+                                <div class='profile-description'>
                                     루아 | Designer
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class='post'
-                             style='border-radius: 30px;
-                                    background: rgba(255, 255, 255, 0.14);
-                                    backdrop-filter: blur(17px);
-                                    color: white;
-                                    margin: 0 0 20px 0;
-                                    padding: 15px 20px;'>
-                            <p class='post-title'
-                               style='font-size: 20px;
-                                      font-weight: 700;
-                                      margin: 0'>
+                        <div class='post'>
+                            <p class='post-title'>
                                 Object 대신 Map 사용을 고려해보자
                             </p>
                             <p>자바스크립트 Map의 이점</p>
-                            <div class='post-profile'
-                                 style='display: flex;'>
+                            <div class='post-profile'>
                                 <div class='post-profile profile-image'
-                                     style='width: 50px;
-                                            height: 50px;
-                                            border-radius: 50%;
-                                            background-position: center;
-                                            background-repeat: no-repeat;
-                                            background-size: 100%;
-                                            background-image: url("/src/images/SophieProfile.png")'>
+                                     style='background-image: url("/src/images/SophieProfile.png")'>
                                 </div>
-                                <div class='post-profile profile-description'
-                                     style='width: 100px;
-                                            height: 50px;
-                                            align-items: center;
-                                            padding-left: 10px;
-                                            display: flex;'>
+                                <div class='post-profile profile-description'>
                                     소피 | FE
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class='post'
-                             style='border-radius: 30px;
-                                    background: rgba(255, 255, 255, 0.14);
-                                    backdrop-filter: blur(17px);
-                                    color: white;
-                                    margin: 0 0 20px 0;
-                                    padding: 15px 20px;'>
-                            <p class='post-title'
-                               style='font-size: 20px;
-                                      font-weight: 700;
-                                      margin: 0'>
+                        <div class='post'>
+                            <p class='post-title'>
                                 2023년 인프콘 후기
                             </p>
                             <p>주니어 개발자가 바라본 인프콘의 이야기</p>
-                            <div class='post-profile'
-                                 style='display: flex;'>
+                            <div class='post-profile'>
                                 <div class='post-profile profile-image'
-                                     style='width: 50px;
-                                            height: 50px;
-                                            border-radius: 50%;
-                                            background-position: center;
-                                            background-repeat: no-repeat;
-                                            background-size: 100%;
-                                            background-image: url("/src/images/LunaProfile.png")'>
+                                     style='background-image: url("/src/images/LunaProfile.png")'>
                                 </div>
-                                <div class='post-profile profile-description'
-                                     style='width: 100px;
-                                            height: 50px;
-                                            align-items: center;
-                                            padding-left: 10px;
-                                            display: flex;'>
+                                <div class='post-profile profile-description'>
                                     루나 | DevOps
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class='post'
-                             style='border-radius: 30px;
-                                    background: rgba(255, 255, 255, 0.14);
-                                    backdrop-filter: blur(17px);
-                                    color: white;
-                                    margin: 0 0 20px 0;
-                                    padding: 15px 20px;'>
-                            <p class='post-title'
-                               style='font-size: 20px;
-                                      font-weight: 700;
-                                      margin: 0'>
+                        <div class='post''>
+                            <p class='post-title'>
                                 우리는 IT 회사가 될 수 있을까?
                             </p>
                             <p>기업 컨설팅 회사가 개발자 IT회사로 가기까지의 우여곡절!</p>
-                            <div class='post-profile'
-                                 style='display: flex;'>
+                            <div class='post-profile'>
                                 <div class='post-profile profile-image'
-                                     style='width: 50px;
-                                            height: 50px;
-                                            border-radius: 50%;
-                                            background-position: center;
-                                            background-repeat: no-repeat;
-                                            background-size: 100%;
-                                            background-image: url("/src/images/AdamProfile.png")'>
+                                     style='background-image: url("/src/images/AdamProfile.png")'>
                                 </div>
-                                <div class='post-profile profile-description'
-                                     style='width: 100px;
-                                            height: 50px;
-                                            align-items: center;
-                                            padding-left: 10px;
-                                            display: flex;'>
+                                <div class='post-profile profile-description'>
                                     애덤 | PM
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class='post'
-                             style='border-radius: 30px;
-                                    background: rgba(255, 255, 255, 0.14);
-                                    backdrop-filter: blur(17px);
-                                    color: white;
-                                    margin: 0 0 20px 0;
-                                    padding: 15px 20px;'>
-                            <p class='post-title'
-                               style='font-size: 20px;
-                                      font-weight: 700;
-                                      margin: 0'>
+                        <div class='post'>
+                            <p class='post-title'>
                                 React Hook의 종류와 사용법
                             </p>
                             <p>React에 대해서 좀 아는가?</p>
-                            <div class='post-profile'
-                                 style='display: flex;'>
+                            <div class='post-profile'>
                                 <div class='post-profile profile-image'
-                                     style='width: 50px;
-                                            height: 50px;
-                                            border-radius: 50%;
-                                            background-position: center;
-                                            background-repeat: no-repeat;
-                                            background-size: 100%;
-                                            background-image: url("/src/images/KennyProfile.png")'>
+                                     style='background-image: url("/src/images/KennyProfile.png")'>
                                 </div>
-                                <div class='post-profile profile-description'
-                                     style='width: 100px;
-                                            height: 50px;
-                                            align-items: center;
-                                            padding-left: 10px;
-                                            display: flex;'>
+                                <div class='post-profile profile-description'>
                                     케니 | FE
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class='post'
-                             style='border-radius: 30px;
-                                    background: rgba(255, 255, 255, 0.14);
-                                    backdrop-filter: blur(17px);
-                                    color: white;
-                                    margin: 0 0 20px 0;
-                                    padding: 15px 20px;'>
-                            <p class='post-title'
-                               style='font-size: 20px;
-                                      font-weight: 700;
-                                      margin: 0'>
+                        <div class='post'>
+                            <p class='post-title'>
                                 앱 개발자의 8월 회고록
                             </p>
                             <p>돌아온 월간 회고록</p>
-                            <div class='post-profile'
-                                 style='display: flex;'>
+                            <div class='post-profile'>
                                 <div class='post-profile profile-image'
-                                     style='width: 50px;
-                                            height: 50px;
-                                            border-radius: 50%;
-                                            background-position: center;
-                                            background-repeat: no-repeat;
-                                            background-size: 100%;
-                                            background-image: url("/src/images/HansProfile.png")'>
+                                     style='background-image: url("/src/images/HansProfile.png")'>
                                 </div>
-                                <div class='post-profile profile-description'
-                                     style='width: 100px;
-                                            height: 50px;
-                                            align-items: center;
-                                            padding-left: 10px;
-                                            display: flex;'>
+                                <div class='post-profile profile-description'>
                                     한스 | App
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class='post'
-                             style='border-radius: 30px;
-                                    background: rgba(255, 255, 255, 0.14);
-                                    backdrop-filter: blur(17px);
-                                    color: white;
-                                    margin: 0 0 20px 0;
-                                    padding: 15px 20px;'>
-                            <p class='post-title'
-                               style='font-size: 20px;
-                                      font-weight: 700;
-                                      margin: 0'>
+                        <div class='post''>
+                            <p class='post-title'>
                                 NestJS의 이해
                             </p>
                             <p>DI는 대체 무엇일까</p>
-                            <div class='post-profile'
-                                 style='display: flex;'>
+                            <div class='post-profile'>
                                 <div class='post-profile profile-image'
-                                     style='width: 50px;
-                                            height: 50px;
-                                            border-radius: 50%;
-                                            background-position: center;
-                                            background-repeat: no-repeat;
-                                            background-size: 100%;
-                                            background-image: url("/src/images/LewisProfile.png")'>
+                                     style='background-image: url("/src/images/LewisProfile.png")'>
                                 </div>
-                                <div class='post-profile profile-description'
-                                     style='width: 100px;
-                                            height: 50px;
-                                            align-items: center;
-                                            padding-left: 10px;
-                                            display: flex;'>
+                                <div class='post-profile profile-description'>
                                     루이스 | BE
                                 </div>
                             </div>
@@ -354,7 +190,7 @@
                            margin: 0;
                            padding: 0'>
                     <li>
-                        <div class='profile'
+                        <div class='profile'p
                              style='border-radius: 30px;
                                     background: rgba(255, 255, 255, 0.14);
                                     backdrop-filter: blur(17px);
