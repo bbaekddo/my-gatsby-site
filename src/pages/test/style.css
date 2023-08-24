@@ -1,51 +1,80 @@
-html,body{
+html,body {
         background-color: black;
         padding: 30px;
 }
 
-header{
+header {
     .header-image {
         position: relative;
         z-index: 1;
-        width: 150px;
-        height:27px;
+        width: 200px;
+        height:30px;
     }
 }
 
-main{
+main {
     #title-sub1-sec {
         padding: 50px 0;
-        .title-sub1-wrap{
-            .title-sub1 {
-                color: white;
+
+        .title-sub1-wrap {
+            font-size: 40px;
+            font-weight: 200;
+            line-height: 40px;
+            position: relative;
+            z-index: 1;
+
+            & strong {
                 font-size: 40px;
-                font-weight: 200;
-                line-height: 40px;
+                font-weight: 400;
+                line-height: 20px;
                 position: relative;
                 z-index: 1;
-                & strong {
-                    color: white;
-                    font-size: 40px;
-                    font-weight: 400;
-                    line-height: 20px;
-                    position: relative;
-                    z-index: 1;
-                }
             }
+        }
+
+        .title-sub1-bottom {
+            padding-bottom: 10px;
         }
     }
 
     #title-sub2-sec {
         padding: 20px 0;
+
         .title-sub2-wrap {
-            color:white;
-            font-size: 12px;
-            font-weight: 300;
+            font-size: 15px;
+            font-weight: 350;
             line-height: 20px;
         }
     }
 
+    #top-right-wrap {
+        .blue-circle-wrap {
+            position: absolute;
+            top: -400px;
+            right: 0;
+            width: 400px;
+            height: 1065px;
+            transform: rotate(90deg);
+            border-radius: 9px;
+            background: rgba(0, 94, 255, 0.90);
+            filter: blur(267px);
+            overflow: hidden;
+            object-fit: cover;
+        }
+        .main-glass {
+            position: absolute;
+            top: 0;
+            right: 0;
+            flex-shrink: 0;
+            & img {
+                width: 500px;
+                right: 0;
+            }
+        }
+    }
+
     #see-more-button {
+        text-align: center;
         & img{
             width:40px;
         }
@@ -59,7 +88,7 @@ main{
         }
         & ul {
             & li{
-                .post{
+                .post {
                     border-radius: 30px;
                     background: rgba(255, 255, 255, 0.14);
                     backdrop-filter: blur(17px);
@@ -67,13 +96,14 @@ main{
                     margin: 0 0 20px 0;
                     padding: 15px 20px;
                     .post-title {
-                        font-size: 20px;
+                        font-size: 25px;
                         font-weight: 700;
                         margin-bottom: 10px;
                     }
                     .post-profile {
                         display: flex;
                         padding-top: 10px;
+                        font-size: 15px;
                         .profile-image {
                             width: 50px;
                             height: 50px;
@@ -92,6 +122,12 @@ main{
                     }
                 }
             }
+        }
+
+        .right-content {
+            float: left;
+            width: 20%;
+            padding: 0 2.5%
         }
     }
 
