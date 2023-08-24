@@ -15,10 +15,8 @@
     <main>
         <!-- 첫 번째 문단 -->
         <section id='title-sub1-sec'>
-            <div class='title-sub1-wrap'>
-                <div class='title-sub1'>가인지캠퍼스</div>
-                <div class='title-sub1'><strong>개발</strong>에 대한 <strong>모든 것</strong></div>
-            </div>
+            <div class='title-sub1-wrap title-sub1-bottom'>가인지캠퍼스</div>
+            <div class='title-sub1-wrap'><strong>개발</strong>에 대한 <strong>모든 것</strong></div>
         </section>
 
         <!-- 두 번째 문단 -->
@@ -32,37 +30,22 @@
         </section>
 
         <!-- 오른쪽 상단 -->
-        <section id='main-glasses-wrap'>
-            <!-- 오른쪽 상단 파란색 동그라미 배경 -->
-            <div class='top-wrap'
-                 style='position: absolute;
-                        top: -400px;
-                        right: -100px;
-                        width: 383px;
-                        height: 1065px;
-                        transform: rotate(90deg);
-                        flex-shrink: 0;
-                        border-radius: 9px;
-                        background: rgba(0, 94, 255, 0.90);
-                        filter: blur(267px);'>
-            </div>
-            <!-- 오른쪽 상단 유리 이미지 -->
-            <div class='main-glass'
-                 style='position: absolute;
-                        top: 0;
-                        right: 0;
-                        flex-shrink: 0;'>
-                <img style='width:500px;
-                            right: 0'
-                     src='/src/images/glasses.png'
-                     alt='glasses' />
+        <section id='top-right-wrap'>
+            // TODO: 왜 안 맞을까?
+            <div>
+                <!-- 오른쪽 상단 파란색 동그라미 배경 -->
+                <div class='blue-circle-wrap'></div>
+                <!-- 오른쪽 상단 유리 이미지 -->
+                <div class='main-glass'>
+                    <img src='/src/images/glasses.png' alt='glasses'/>
+                </div>
             </div>
         </section>
 
         <br>
 
         <!-- 더 보기 버튼 -->
-        <section id='see-more-button' style='text-align: center'>
+        <section id='see-more-button'>
             <img src='/src/images/see-more-button.svg' alt='button-image'/>
         </section>
 
@@ -75,7 +58,7 @@
                             <p class='post-title'>UX/UI의 개념</p>
                             <p>사용자의 관점에서 바라본 프로덕트란</p>
                             <div class='post-profile'>
-                                <div class='profile-image'
+                                <div class='post-profile profile-image'
                                      style='background-image: url("/src/images/RuahProfile.png")'>
                                 </div>
                                 <div class='profile-description'>
@@ -182,15 +165,10 @@
                     </li>
                 </ul>
             </div>
-            <div class='right-content'
-                 style='float: left;
-                        width: 20%;
-                        padding: 0 2.5%'>
-                <ul style='list-style: none;
-                           margin: 0;
-                           padding: 0'>
+            <div class='right-content'>
+                <ul>
                     <li>
-                        <div class='profile'p
+                        <div class='profile'
                              style='border-radius: 30px;
                                     background: rgba(255, 255, 255, 0.14);
                                     backdrop-filter: blur(17px);
